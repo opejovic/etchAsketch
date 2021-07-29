@@ -5,7 +5,7 @@ const clearButton = document.querySelector('.clear');
 let x = Math.floor(Math.random() * canvas.width);
 let y = Math.floor(Math.random() * canvas.height);
 
-const LINE_WIDTH = 10;
+const LINE_WIDTH = 5;
 let MOVE_AMOUNT = 10;
 
 ctx.lineWidth = LINE_WIDTH;
@@ -17,8 +17,8 @@ ctx.lineTo(x, y);
 ctx.stroke();
 
 function draw(key) {
-  ctx.moveTo(x, y);
   ctx.beginPath();
+  ctx.moveTo(x, y);
 
   switch (key) {
     case 'ArrowUp':
