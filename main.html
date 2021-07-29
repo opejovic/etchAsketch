@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a sketch</title>
+  </head>
+
+  <body>
+    <header class="header">
+      Use arrow keys to draw. Use shift to draw faster.
+    </header>
+    <main class="canvas-container">
+      <canvas id="canvas" class="canvas" height="2000" width="3200"></canvas>
+      <button class="clear">Clear</button>
+    </main>
+  </body>
+  <style>
+    .header {
+      width: 100vw;
+      text-align: center;
+      padding: 2rem;
+    }
+    .canvas-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .canvas {
+      border: 1px solid gray;
+      background: white;
+      height: 500px;
+      width: 800px;
+    }
+
+    .clear {
+      background-color: white;
+      border: 1px solid gray;
+      color: gray;
+      padding: 1rem;
+      display: block;
+      margin-top: 5px;
+      cursor: pointer;
+      pointer-events: all;
+    }
+  </style>
+  <script src="./main.js"></script>
+</html>
